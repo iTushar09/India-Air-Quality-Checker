@@ -13,3 +13,5 @@ A simple Flask web application that allows users to check the Air Quality Index 
 
 ---
 
+## Image
+![image](https://github.com/user-attachments/assets/82710597-4c7e-46d0-9a7f-169a11fd0019)
