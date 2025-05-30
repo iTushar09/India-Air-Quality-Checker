@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>India Air Quality Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            /* background-color removed from here */
+        }
+        .aqi-box {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: white;
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        .error {
+            color: red;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body style="background-color: {{ air_quality.color if air_quality else '#f0f0f0' }}">
+    <h1>India Air Quality Checker</h1>
+    <form method="POST">
+        <input type="text" name="city" placeholder="Enter Indian city name" required />
+        <button type="submit">Check Air Quality</button>
+    </form>
+
+    {% if air_quality %}
+        <div class="aqi-box">
+            <h2>{{ air_quality.city }}</h2>
+            <p>AQI: <strong>{{ air_quality.aqi }} ({{ air_quality.category }})</strong></p>
+        </div>
+    {% endif %}
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

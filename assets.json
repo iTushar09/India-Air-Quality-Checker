@@ -1,0 +1,2 @@
+[
+    {"DateObserved":"2025-05-27","HourObserved":0,"LocalTimeZone":"PST","ReportingArea":"S Central LA CO","StateCode":"CA","Latitude":33.9288,"Longitude":-118.2108,"ParameterName":"O3","AQI":31,"Category":{"Number":1,"Name":"Good"}},{"DateObserved":"2025-05-27","HourObserved":0,"LocalTimeZone":"PST","ReportingArea":"S Central LA CO","StateCode":"CA","Latitude":33.9288,"Longitude":-118.2108,"ParameterName":"PM2.5","AQI":40,"Category":{"Number":1,"Name":"Good"}}]
